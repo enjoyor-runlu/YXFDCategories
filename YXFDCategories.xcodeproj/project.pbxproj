@@ -7,113 +7,152 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53536C0D1FDA3D1700619AD3 /* NSArray+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536BFF1FDA3D1700619AD3 /* NSArray+YiXiang.m */; };
-		53536C0E1FDA3D1700619AD3 /* UIDevice+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C031FDA3D1700619AD3 /* UIDevice+YiXiang.m */; };
-		53536C0F1FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C061FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.m */; };
-		53536C101FDA3D1700619AD3 /* NSMutableArray+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C071FDA3D1700619AD3 /* NSMutableArray+YiXiang.m */; };
-		53536C111FDA3D1700619AD3 /* NSValue+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C091FDA3D1700619AD3 /* NSValue+YiXiang.m */; };
-		53536C121FDA3D1700619AD3 /* NSString+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C0A1FDA3D1700619AD3 /* NSString+YiXiang.m */; };
-		53536C131FDA3D1700619AD3 /* NSDictionary+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 53536C0C1FDA3D1700619AD3 /* NSDictionary+YiXiang.m */; };
+		07815B114A02396C16D8D0C3 /* libPods-YXFDCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E857BF0837DFD7B73C701CEA /* libPods-YXFDCategories.a */; };
+		5354A2871FDA5C020071CD35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2861FDA5C020071CD35 /* AppDelegate.m */; };
+		5354A28A1FDA5C020071CD35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2891FDA5C020071CD35 /* ViewController.m */; };
+		5354A28D1FDA5C020071CD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5354A28B1FDA5C020071CD35 /* Main.storyboard */; };
+		5354A28F1FDA5C020071CD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5354A28E1FDA5C020071CD35 /* Assets.xcassets */; };
+		5354A2921FDA5C020071CD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5354A2901FDA5C020071CD35 /* LaunchScreen.storyboard */; };
+		5354A2951FDA5C020071CD35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2941FDA5C020071CD35 /* main.m */; };
+		5354A2AB1FDA610B0071CD35 /* NSMutableArray+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A29C1FDA610B0071CD35 /* NSMutableArray+YiXiang.m */; };
+		5354A2AC1FDA610B0071CD35 /* NSDictionary+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A29D1FDA610B0071CD35 /* NSDictionary+YiXiang.m */; };
+		5354A2AD1FDA610B0071CD35 /* UIDevice+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A29E1FDA610B0071CD35 /* UIDevice+YiXiang.m */; };
+		5354A2AE1FDA610B0071CD35 /* NSValue+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2A01FDA610B0071CD35 /* NSValue+YiXiang.m */; };
+		5354A2AF1FDA610B0071CD35 /* NSArray+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2A61FDA610B0071CD35 /* NSArray+YiXiang.m */; };
+		5354A2B01FDA610B0071CD35 /* NSString+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2A91FDA610B0071CD35 /* NSString+YiXiang.m */; };
+		5354A2B11FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354A2AA1FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		53536BEF1FDA3CCD00619AD3 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		53536BF11FDA3CCD00619AD3 /* libYXFDCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYXFDCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		53536BFE1FDA3D1700619AD3 /* YXFDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFDCategory.h; sourceTree = "<group>"; };
-		53536BFF1FDA3D1700619AD3 /* NSArray+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YiXiang.m"; sourceTree = "<group>"; };
-		53536C001FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+YiXiang.h"; sourceTree = "<group>"; };
-		53536C011FDA3D1700619AD3 /* NSMutableArray+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YiXiang.h"; sourceTree = "<group>"; };
-		53536C021FDA3D1700619AD3 /* NSValue+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+YiXiang.h"; sourceTree = "<group>"; };
-		53536C031FDA3D1700619AD3 /* UIDevice+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YiXiang.m"; sourceTree = "<group>"; };
-		53536C041FDA3D1700619AD3 /* NSString+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YiXiang.h"; sourceTree = "<group>"; };
-		53536C051FDA3D1700619AD3 /* NSDictionary+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YiXiang.h"; sourceTree = "<group>"; };
-		53536C061FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+YiXiang.m"; sourceTree = "<group>"; };
-		53536C071FDA3D1700619AD3 /* NSMutableArray+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YiXiang.m"; sourceTree = "<group>"; };
-		53536C081FDA3D1700619AD3 /* NSArray+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YiXiang.h"; sourceTree = "<group>"; };
-		53536C091FDA3D1700619AD3 /* NSValue+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+YiXiang.m"; sourceTree = "<group>"; };
-		53536C0A1FDA3D1700619AD3 /* NSString+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YiXiang.m"; sourceTree = "<group>"; };
-		53536C0B1FDA3D1700619AD3 /* UIDevice+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YiXiang.h"; sourceTree = "<group>"; };
-		53536C0C1FDA3D1700619AD3 /* NSDictionary+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YiXiang.m"; sourceTree = "<group>"; };
+		5354A2821FDA5C020071CD35 /* YXFDCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXFDCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5354A2851FDA5C020071CD35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5354A2861FDA5C020071CD35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5354A2881FDA5C020071CD35 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5354A2891FDA5C020071CD35 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5354A28C1FDA5C020071CD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5354A28E1FDA5C020071CD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5354A2911FDA5C020071CD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5354A2931FDA5C020071CD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5354A2941FDA5C020071CD35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5354A29C1FDA610B0071CD35 /* NSMutableArray+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YiXiang.m"; sourceTree = "<group>"; };
+		5354A29D1FDA610B0071CD35 /* NSDictionary+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YiXiang.m"; sourceTree = "<group>"; };
+		5354A29E1FDA610B0071CD35 /* UIDevice+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YiXiang.m"; sourceTree = "<group>"; };
+		5354A29F1FDA610B0071CD35 /* NSArray+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A01FDA610B0071CD35 /* NSValue+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+YiXiang.m"; sourceTree = "<group>"; };
+		5354A2A11FDA610B0071CD35 /* YXFDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFDCategory.h; sourceTree = "<group>"; };
+		5354A2A21FDA610B0071CD35 /* NSMutableDictionary+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A31FDA610B0071CD35 /* NSString+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A41FDA610B0071CD35 /* NSDictionary+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A51FDA610B0071CD35 /* NSMutableArray+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A61FDA610B0071CD35 /* NSArray+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YiXiang.m"; sourceTree = "<group>"; };
+		5354A2A71FDA610B0071CD35 /* UIDevice+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A81FDA610B0071CD35 /* NSValue+YiXiang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+YiXiang.h"; sourceTree = "<group>"; };
+		5354A2A91FDA610B0071CD35 /* NSString+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YiXiang.m"; sourceTree = "<group>"; };
+		5354A2AA1FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+YiXiang.m"; sourceTree = "<group>"; };
+		7E0294C7F46FD5446A69B964 /* Pods-YXFDCategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXFDCategories.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXFDCategories/Pods-YXFDCategories.release.xcconfig"; sourceTree = "<group>"; };
+		E3D5AFD2B0BB8969C5F1BE40 /* Pods-YXFDCategories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXFDCategories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXFDCategories/Pods-YXFDCategories.debug.xcconfig"; sourceTree = "<group>"; };
+		E857BF0837DFD7B73C701CEA /* libPods-YXFDCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXFDCategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53536BEE1FDA3CCD00619AD3 /* Frameworks */ = {
+		5354A27F1FDA5C020071CD35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07815B114A02396C16D8D0C3 /* libPods-YXFDCategories.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53536BE81FDA3CCC00619AD3 = {
+		2165EDB91E71DB925AC5EA41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53536BF31FDA3CCD00619AD3 /* YXFDCategories */,
-				53536BF21FDA3CCD00619AD3 /* Products */,
+				E857BF0837DFD7B73C701CEA /* libPods-YXFDCategories.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5354A2791FDA5C020071CD35 = {
+			isa = PBXGroup;
+			children = (
+				5354A2841FDA5C020071CD35 /* YXFDCategories */,
+				5354A2831FDA5C020071CD35 /* Products */,
+				BC561C342B97DB18E5C29983 /* Pods */,
+				2165EDB91E71DB925AC5EA41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		53536BF21FDA3CCD00619AD3 /* Products */ = {
+		5354A2831FDA5C020071CD35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53536BF11FDA3CCD00619AD3 /* libYXFDCategories.a */,
+				5354A2821FDA5C020071CD35 /* YXFDCategories.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		53536BF31FDA3CCD00619AD3 /* YXFDCategories */ = {
+		5354A2841FDA5C020071CD35 /* YXFDCategories */ = {
 			isa = PBXGroup;
 			children = (
-				53536BFD1FDA3D1700619AD3 /* Classes */,
+				5354A29B1FDA610B0071CD35 /* Classes */,
+				5354A2851FDA5C020071CD35 /* AppDelegate.h */,
+				5354A2861FDA5C020071CD35 /* AppDelegate.m */,
+				5354A2881FDA5C020071CD35 /* ViewController.h */,
+				5354A2891FDA5C020071CD35 /* ViewController.m */,
+				5354A28B1FDA5C020071CD35 /* Main.storyboard */,
+				5354A28E1FDA5C020071CD35 /* Assets.xcassets */,
+				5354A2901FDA5C020071CD35 /* LaunchScreen.storyboard */,
+				5354A2931FDA5C020071CD35 /* Info.plist */,
+				5354A2941FDA5C020071CD35 /* main.m */,
 			);
 			path = YXFDCategories;
 			sourceTree = "<group>";
 		};
-		53536BFD1FDA3D1700619AD3 /* Classes */ = {
+		5354A29B1FDA610B0071CD35 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				53536BFE1FDA3D1700619AD3 /* YXFDCategory.h */,
-				53536C081FDA3D1700619AD3 /* NSArray+YiXiang.h */,
-				53536BFF1FDA3D1700619AD3 /* NSArray+YiXiang.m */,
-				53536C001FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.h */,
-				53536C061FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.m */,
-				53536C011FDA3D1700619AD3 /* NSMutableArray+YiXiang.h */,
-				53536C071FDA3D1700619AD3 /* NSMutableArray+YiXiang.m */,
-				53536C021FDA3D1700619AD3 /* NSValue+YiXiang.h */,
-				53536C091FDA3D1700619AD3 /* NSValue+YiXiang.m */,
-				53536C0B1FDA3D1700619AD3 /* UIDevice+YiXiang.h */,
-				53536C031FDA3D1700619AD3 /* UIDevice+YiXiang.m */,
-				53536C041FDA3D1700619AD3 /* NSString+YiXiang.h */,
-				53536C0A1FDA3D1700619AD3 /* NSString+YiXiang.m */,
-				53536C051FDA3D1700619AD3 /* NSDictionary+YiXiang.h */,
-				53536C0C1FDA3D1700619AD3 /* NSDictionary+YiXiang.m */,
+				5354A29C1FDA610B0071CD35 /* NSMutableArray+YiXiang.m */,
+				5354A29D1FDA610B0071CD35 /* NSDictionary+YiXiang.m */,
+				5354A2A71FDA610B0071CD35 /* UIDevice+YiXiang.h */,
+				5354A29E1FDA610B0071CD35 /* UIDevice+YiXiang.m */,
+				5354A29F1FDA610B0071CD35 /* NSArray+YiXiang.h */,
+				5354A2A01FDA610B0071CD35 /* NSValue+YiXiang.m */,
+				5354A2A11FDA610B0071CD35 /* YXFDCategory.h */,
+				5354A2A21FDA610B0071CD35 /* NSMutableDictionary+YiXiang.h */,
+				5354A2A31FDA610B0071CD35 /* NSString+YiXiang.h */,
+				5354A2A91FDA610B0071CD35 /* NSString+YiXiang.m */,
+				5354A2A41FDA610B0071CD35 /* NSDictionary+YiXiang.h */,
+				5354A2A51FDA610B0071CD35 /* NSMutableArray+YiXiang.h */,
+				5354A2A61FDA610B0071CD35 /* NSArray+YiXiang.m */,
+				5354A2A81FDA610B0071CD35 /* NSValue+YiXiang.h */,
+				5354A2AA1FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC561C342B97DB18E5C29983 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3D5AFD2B0BB8969C5F1BE40 /* Pods-YXFDCategories.debug.xcconfig */,
+				7E0294C7F46FD5446A69B964 /* Pods-YXFDCategories.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53536BF01FDA3CCD00619AD3 /* YXFDCategories */ = {
+		5354A2811FDA5C020071CD35 /* YXFDCategories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53536BFA1FDA3CCD00619AD3 /* Build configuration list for PBXNativeTarget "YXFDCategories" */;
+			buildConfigurationList = 5354A2981FDA5C020071CD35 /* Build configuration list for PBXNativeTarget "YXFDCategories" */;
 			buildPhases = (
-				53536BED1FDA3CCD00619AD3 /* Sources */,
-				53536BEE1FDA3CCD00619AD3 /* Frameworks */,
-				53536BEF1FDA3CCD00619AD3 /* CopyFiles */,
+				89BA60FE40F8F4072EC4718E /* [CP] Check Pods Manifest.lock */,
+				5354A27E1FDA5C020071CD35 /* Sources */,
+				5354A27F1FDA5C020071CD35 /* Frameworks */,
+				5354A2801FDA5C020071CD35 /* Resources */,
+				226A9FF6F9E134A0BE391C8B /* [CP] Embed Pods Frameworks */,
+				4C8626621A5FB238612412B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,60 +160,144 @@
 			);
 			name = YXFDCategories;
 			productName = YXFDCategories;
-			productReference = 53536BF11FDA3CCD00619AD3 /* libYXFDCategories.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 5354A2821FDA5C020071CD35 /* YXFDCategories.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		53536BE91FDA3CCC00619AD3 /* Project object */ = {
+		5354A27A1FDA5C020071CD35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "郏国上";
 				TargetAttributes = {
-					53536BF01FDA3CCD00619AD3 = {
+					5354A2811FDA5C020071CD35 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 53536BEC1FDA3CCC00619AD3 /* Build configuration list for PBXProject "YXFDCategories" */;
+			buildConfigurationList = 5354A27D1FDA5C020071CD35 /* Build configuration list for PBXProject "YXFDCategories" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 53536BE81FDA3CCC00619AD3;
-			productRefGroup = 53536BF21FDA3CCD00619AD3 /* Products */;
+			mainGroup = 5354A2791FDA5C020071CD35;
+			productRefGroup = 5354A2831FDA5C020071CD35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53536BF01FDA3CCD00619AD3 /* YXFDCategories */,
+				5354A2811FDA5C020071CD35 /* YXFDCategories */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5354A2801FDA5C020071CD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5354A2921FDA5C020071CD35 /* LaunchScreen.storyboard in Resources */,
+				5354A28F1FDA5C020071CD35 /* Assets.xcassets in Resources */,
+				5354A28D1FDA5C020071CD35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		226A9FF6F9E134A0BE391C8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXFDCategories/Pods-YXFDCategories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C8626621A5FB238612412B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXFDCategories/Pods-YXFDCategories-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BA60FE40F8F4072EC4718E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		53536BED1FDA3CCD00619AD3 /* Sources */ = {
+		5354A27E1FDA5C020071CD35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53536C0D1FDA3D1700619AD3 /* NSArray+YiXiang.m in Sources */,
-				53536C101FDA3D1700619AD3 /* NSMutableArray+YiXiang.m in Sources */,
-				53536C131FDA3D1700619AD3 /* NSDictionary+YiXiang.m in Sources */,
-				53536C0E1FDA3D1700619AD3 /* UIDevice+YiXiang.m in Sources */,
-				53536C121FDA3D1700619AD3 /* NSString+YiXiang.m in Sources */,
-				53536C111FDA3D1700619AD3 /* NSValue+YiXiang.m in Sources */,
-				53536C0F1FDA3D1700619AD3 /* NSMutableDictionary+YiXiang.m in Sources */,
+				5354A2AF1FDA610B0071CD35 /* NSArray+YiXiang.m in Sources */,
+				5354A2AC1FDA610B0071CD35 /* NSDictionary+YiXiang.m in Sources */,
+				5354A28A1FDA5C020071CD35 /* ViewController.m in Sources */,
+				5354A2AB1FDA610B0071CD35 /* NSMutableArray+YiXiang.m in Sources */,
+				5354A2951FDA5C020071CD35 /* main.m in Sources */,
+				5354A2871FDA5C020071CD35 /* AppDelegate.m in Sources */,
+				5354A2AD1FDA610B0071CD35 /* UIDevice+YiXiang.m in Sources */,
+				5354A2B11FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m in Sources */,
+				5354A2B01FDA610B0071CD35 /* NSString+YiXiang.m in Sources */,
+				5354A2AE1FDA610B0071CD35 /* NSValue+YiXiang.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		5354A28B1FDA5C020071CD35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5354A28C1FDA5C020071CD35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5354A2901FDA5C020071CD35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5354A2911FDA5C020071CD35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		53536BF81FDA3CCD00619AD3 /* Debug */ = {
+		5354A2961FDA5C020071CD35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +352,7 @@
 			};
 			name = Debug;
 		};
-		53536BF91FDA3CCD00619AD3 /* Release */ = {
+		5354A2971FDA5C020071CD35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,26 +401,32 @@
 			};
 			name = Release;
 		};
-		53536BFB1FDA3CCD00619AD3 /* Debug */ = {
+		5354A2991FDA5C020071CD35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D5AFD2B0BB8969C5F1BE40 /* Pods-YXFDCategories.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5P525FR3YV;
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = YXFDCategories/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YiXiang.YXFDCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		53536BFC1FDA3CCD00619AD3 /* Release */ = {
+		5354A29A1FDA5C020071CD35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0294C7F46FD5446A69B964 /* Pods-YXFDCategories.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5P525FR3YV;
-				OTHER_LDFLAGS = "-ObjC";
+				INFOPLIST_FILE = YXFDCategories/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YiXiang.YXFDCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -305,25 +434,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53536BEC1FDA3CCC00619AD3 /* Build configuration list for PBXProject "YXFDCategories" */ = {
+		5354A27D1FDA5C020071CD35 /* Build configuration list for PBXProject "YXFDCategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53536BF81FDA3CCD00619AD3 /* Debug */,
-				53536BF91FDA3CCD00619AD3 /* Release */,
+				5354A2961FDA5C020071CD35 /* Debug */,
+				5354A2971FDA5C020071CD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53536BFA1FDA3CCD00619AD3 /* Build configuration list for PBXNativeTarget "YXFDCategories" */ = {
+		5354A2981FDA5C020071CD35 /* Build configuration list for PBXNativeTarget "YXFDCategories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53536BFB1FDA3CCD00619AD3 /* Debug */,
-				53536BFC1FDA3CCD00619AD3 /* Release */,
+				5354A2991FDA5C020071CD35 /* Debug */,
+				5354A29A1FDA5C020071CD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 53536BE91FDA3CCC00619AD3 /* Project object */;
+	rootObject = 5354A27A1FDA5C020071CD35 /* Project object */;
 }

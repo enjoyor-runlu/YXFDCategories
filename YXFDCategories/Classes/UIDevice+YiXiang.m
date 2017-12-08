@@ -55,7 +55,7 @@ const char* jailbreak_tool_pathes[] = {
                 if ([[uniqueId stringByReplacingOccurrencesOfString:@"-" withString:@""] stringByReplacingOccurrencesOfString:@"0" withString:@""].length == 0) {//不存在说明用户关闭了广告跟踪
                     NSString *timeString = [NSString stringWithFormat:@"%.5f",[[NSDate date] timeIntervalSince1970]];
                     NSString *randomString = [NSString stringWithFormat:@"%d", arc4random() % 10000/*0-9999*/];
-                    uniqueId = [[timeString stringByAppendingString:randomString] YiXiang_md5hashString];
+                    uniqueId = [[timeString stringByAppendingString:randomString] yixiang_md5hashString];
                 }
             }
             [SAMKeychain setPassword:uniqueId forService:kUXUniqueIDServiceName account:kUXUniqueIDAccountName];
@@ -595,7 +595,7 @@ const char* jailbreak_tool_pathes[] = {
     if (!uniqueId || uniqueId.length < 1) {
         NSString *timeString = [NSString stringWithFormat:@"%.5f",[[NSDate date] timeIntervalSince1970]];
         NSString *randomString = [NSString stringWithFormat:@"%d", arc4random() % 10000/*0-9999*/];
-        uniqueId = [[timeString stringByAppendingString:randomString] YiXiang_md5hashString];
+        uniqueId = [[timeString stringByAppendingString:randomString] yixiang_md5hashString];
         [[NSUserDefaults standardUserDefaults] setObject:uniqueId forKey:kUIDAccountName];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
