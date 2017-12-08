@@ -2,7 +2,7 @@
 //  NSArray+YiXiang.h
 //  Pods
 //
-//  Created by luminary on 2017/7/21.
+//  Created by jiaguoshang on 2017/7/21.
 //
 //
 

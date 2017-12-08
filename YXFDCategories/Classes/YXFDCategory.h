@@ -2,7 +2,7 @@
 //  YXFDCategory.h
 //  Pods
 //
-//  Created by luminary on 2017/5/23.
+//  Created by jiaguoshang on 2017/5/23.
 //
 //
 
