@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, DeviceNetworkStatus){
     DeviceNetworkStatusWiFi = 6,
 };
 
-@interface UIDevice (UXing)
+@interface UIDevice (YiXiang)
 
 //设备唯一标识符,取idfa,idfa取不到的时候使用时间戳加随机数
 + (NSString *)yixiang_uniqueID;

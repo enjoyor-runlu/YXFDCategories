@@ -37,11 +37,11 @@ const char* jailbreak_tool_pathes[] = {
 
 @implementation UIDevice (YiXiang)
 
-+ (NSString *)YiXiang_uniqueID
++ (NSString *)yixiang_uniqueID
 {
     
     static NSString *kUXUniqueIDAccountName = @"com.YiXiang.idfa";
-    static NSString *kUXUniqueIDServiceName = @"YiXiang_unique_key";
+    static NSString *kUXUniqueIDServiceName = @"yixiang_unique_key";
     
     static dispatch_once_t onceToken;
     static NSString * uniqueId = nil;
@@ -51,7 +51,7 @@ const char* jailbreak_tool_pathes[] = {
         
         if (uniqueId.length == 0) {
             if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-                uniqueId = [self YiXiang_IDFA];
+                uniqueId = [self yixiang_IDFA];
                 if ([[uniqueId stringByReplacingOccurrencesOfString:@"-" withString:@""] stringByReplacingOccurrencesOfString:@"0" withString:@""].length == 0) {//不存在说明用户关闭了广告跟踪
                     NSString *timeString = [NSString stringWithFormat:@"%.5f",[[NSDate date] timeIntervalSince1970]];
                     NSString *randomString = [NSString stringWithFormat:@"%d", arc4random() % 10000/*0-9999*/];
@@ -146,7 +146,7 @@ const char* jailbreak_tool_pathes[] = {
     return [self ipAddressWithIfaName:@"pdp_ip0"];
 }
 
-+ (NSString *)YiXiang_IDFA
++ (NSString *)yixiang_IDFA
 {
     NSString *idfa = nil;
     if (NSClassFromString(@"ASIdentifierManager")) {
@@ -204,22 +204,22 @@ const char* jailbreak_tool_pathes[] = {
 
 }
 
-+ (NSString *)YiXiang_appVersion
++ (NSString *)yixiang_appVersion
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSString *)YiXiang_buildVersion
++ (NSString *)yixiang_buildVersion
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
 }
 
-+ (NSString *)YiXiang_fullVersion
++ (NSString *)yixiang_fullVersion
 {
-    return [NSString stringWithFormat:@"%@.%@", [self YiXiang_appVersion], [self YiXiang_buildVersion]];
+    return [NSString stringWithFormat:@"%@.%@", [self yixiang_appVersion], [self yixiang_buildVersion]];
 }
 
-+ (NSString *)YiXiang_systemType
++ (NSString *)yixiang_systemType
 {
     static NSString *deviceName = nil;
     if (!deviceName) {
@@ -234,7 +234,7 @@ const char* jailbreak_tool_pathes[] = {
     return deviceName;
 }
 
-+ (NSString *)YiXiang_systemVersion
++ (NSString *)yixiang_systemVersion
 {
     return [[UIDevice currentDevice] systemVersion];
 }
@@ -268,7 +268,7 @@ const char* jailbreak_tool_pathes[] = {
     return name;
 }
 
-+ (DeviceNetworkStatus)YiXiang_networkSatus
++ (DeviceNetworkStatus)yixiang_networkSatus
 {
     UIApplication *application = [UIApplication sharedApplication];
     NSArray *subViews = [[[application valueForKeyPath:@"statusBar"]
@@ -308,7 +308,7 @@ const char* jailbreak_tool_pathes[] = {
 
 
 
-+ (NSString *)YiXiang_cellularProvider
++ (NSString *)yixiang_cellularProvider
 {
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = info.subscriberCellularProvider;
@@ -317,7 +317,7 @@ const char* jailbreak_tool_pathes[] = {
 
 }
 
-+ (NSString *)YiXiang_ipAddress
++ (NSString *)yixiang_ipAddress
 {
     NSString *address = nil;
     NSString *wifiAddress = nil;
@@ -361,7 +361,7 @@ const char* jailbreak_tool_pathes[] = {
     return address ? : @"";
 }
 
-+ (CGSize)YiXiang_screenPixelSize
++ (CGSize)yixiang_screenPixelSize
 {
     CGSize size = [[UIScreen mainScreen] bounds].size;
     size = CGSizeMake(size.width * [UIScreen mainScreen].scale, size.height * [UIScreen mainScreen].scale);
@@ -369,7 +369,7 @@ const char* jailbreak_tool_pathes[] = {
 
 }
 
-+ (CGFloat)YiXiang_availableMemory
++ (CGFloat)yixiang_availableMemory
 {
     vm_statistics_data_t vmStats;
     mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
@@ -385,7 +385,7 @@ const char* jailbreak_tool_pathes[] = {
     return ((vm_page_size *vmStats.free_count) / 1024.0) / 1024.0;
 }
 
-+ (CGFloat)YiXiang_usedMemory
++ (CGFloat)yixiang_usedMemory
 {
     task_basic_info_data_t taskInfo;
     mach_msg_type_number_t infoCount = TASK_BASIC_INFO_COUNT;
@@ -402,7 +402,7 @@ const char* jailbreak_tool_pathes[] = {
     return taskInfo.resident_size;
 }
 
-+ (CGFloat)YiXiang_cpuUsage
++ (CGFloat)yixiang_cpuUsage
 {
     kern_return_t kr;
     task_info_data_t tinfo;
@@ -465,7 +465,7 @@ const char* jailbreak_tool_pathes[] = {
 }
 
 //wifi名称
-+ (NSString *)YiXiang_wifiName
++ (NSString *)yixiang_wifiName
 {
     NSString *wifiName = nil;
     CFArrayRef wifiInterfaces = CNCopySupportedInterfaces();
@@ -486,14 +486,14 @@ const char* jailbreak_tool_pathes[] = {
 }
 
 //系统语言
-+ (NSString *)YiXiang_language
++ (NSString *)yixiang_language
 {
     NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
     return [appLanguages objectAtIndex:0];
 }
 
 //通讯录
-+ (void)YiXiang_addressBookWithBlock:(void (^)(NSArray *phoneBook))block
++ (void)yixiang_addressBookWithBlock:(void (^)(NSArray *phoneBook))block
 {
     ABAuthorizationStatus status = ABAddressBookGetAuthorizationStatus();
     if (status == kABAuthorizationStatusNotDetermined) {
@@ -507,7 +507,7 @@ const char* jailbreak_tool_pathes[] = {
             //3.2 判断是否授权
             if (granted) {
                 if (block) {
-                    block([UIDevice YiXiang_addressBook]);
+                    block([UIDevice yixiang_addressBook]);
                 }
                 CFRelease(addressBook);
             } else {
@@ -516,12 +516,12 @@ const char* jailbreak_tool_pathes[] = {
         });
     } else if(status == kABAuthorizationStatusAuthorized) {
         if (block) {
-            block([UIDevice YiXiang_addressBook]);
+            block([UIDevice yixiang_addressBook]);
         }
     }
 }
 
-+ (NSArray *)YiXiang_addressBook {
++ (NSArray *)yixiang_addressBook {
     NSMutableArray *phoneBook = [NSMutableArray array];
     ABAuthorizationStatus status = ABAddressBookGetAuthorizationStatus();
     if(status == kABAuthorizationStatusAuthorized) {
@@ -562,7 +562,7 @@ const char* jailbreak_tool_pathes[] = {
     return phoneBook;
 }
 
-+ (int)YiXiang_batteryQuantity {
++ (int)yixiang_batteryQuantity {
     
     UIApplication *application = [UIApplication sharedApplication];
     if (application.applicationState == UIApplicationStateActive|| application.applicationState==UIApplicationStateInactive) {
@@ -588,7 +588,7 @@ const char* jailbreak_tool_pathes[] = {
     return 0;
 }
 
-+ (NSString *)YiXiang_uid
++ (NSString *)yixiang_uid
 {
     static NSString *kUIDAccountName = @"com.YiXiang.install.uid";
     NSString *uniqueId = [[NSUserDefaults standardUserDefaults] objectForKey:kUIDAccountName];
