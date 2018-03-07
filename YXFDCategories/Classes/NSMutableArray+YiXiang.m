@@ -32,5 +32,12 @@
     }
 }
 
+- (void)removeSafeObjectAtIndex:(NSUInteger)index
+{
+    if ((self.count > 0) && (self.count > index))
+    {
+        [self removeObjectAtIndex:index];
+    }
+}
 
 @end

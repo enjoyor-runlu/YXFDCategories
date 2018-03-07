@@ -112,6 +112,7 @@
 		5354A29B1FDA610B0071CD35 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5354A2A51FDA610B0071CD35 /* NSMutableArray+YiXiang.h */,
 				5354A29C1FDA610B0071CD35 /* NSMutableArray+YiXiang.m */,
 				5354A29D1FDA610B0071CD35 /* NSDictionary+YiXiang.m */,
 				5354A2A71FDA610B0071CD35 /* UIDevice+YiXiang.h */,
@@ -119,13 +120,12 @@
 				5354A29F1FDA610B0071CD35 /* NSArray+YiXiang.h */,
 				5354A2A01FDA610B0071CD35 /* NSValue+YiXiang.m */,
 				5354A2A11FDA610B0071CD35 /* YXFDCategory.h */,
-				5354A2A21FDA610B0071CD35 /* NSMutableDictionary+YiXiang.h */,
 				5354A2A31FDA610B0071CD35 /* NSString+YiXiang.h */,
 				5354A2A91FDA610B0071CD35 /* NSString+YiXiang.m */,
 				5354A2A41FDA610B0071CD35 /* NSDictionary+YiXiang.h */,
-				5354A2A51FDA610B0071CD35 /* NSMutableArray+YiXiang.h */,
 				5354A2A61FDA610B0071CD35 /* NSArray+YiXiang.m */,
 				5354A2A81FDA610B0071CD35 /* NSValue+YiXiang.h */,
+				5354A2A21FDA610B0071CD35 /* NSMutableDictionary+YiXiang.h */,
 				5354A2AA1FDA610B0071CD35 /* NSMutableDictionary+YiXiang.m */,
 			);
 			path = Classes;

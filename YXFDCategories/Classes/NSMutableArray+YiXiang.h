@@ -17,5 +17,6 @@
 
 - (void)addObjectsFromSafeArray:(NSArray *)otherArray;
 
+- (void)removeSafeObjectAtIndex:(NSUInteger)index;
 
 @end
