@@ -37,35 +37,35 @@ const char* jailbreak_tool_pathes[] = {
 
 @implementation UIDevice (YiXiang)
 
-+ (NSString *)yixiang_uniqueID
-{
-    
-    static NSString *kUXUniqueIDAccountName = @"com.YiXiang.idfa";
-    static NSString *kUXUniqueIDServiceName = @"yixiang_unique_key";
-    
-    static dispatch_once_t onceToken;
-    static NSString * uniqueId = nil;
-    dispatch_once(&onceToken, ^{
-        
-        uniqueId = [SAMKeychain passwordForService:kUXUniqueIDServiceName account:kUXUniqueIDAccountName];
-        
-        if (uniqueId.length == 0) {
-            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-                uniqueId = [self yixiang_IDFA];
-                if ([[uniqueId stringByReplacingOccurrencesOfString:@"-" withString:@""] stringByReplacingOccurrencesOfString:@"0" withString:@""].length == 0) {//不存在说明用户关闭了广告跟踪
-                    NSString *timeString = [NSString stringWithFormat:@"%.5f",[[NSDate date] timeIntervalSince1970]];
-                    NSString *randomString = [NSString stringWithFormat:@"%d", arc4random() % 10000/*0-9999*/];
-                    uniqueId = [[timeString stringByAppendingString:randomString] yixiang_md5hashString];
-                }
-            }
-            [SAMKeychain setPassword:uniqueId forService:kUXUniqueIDServiceName account:kUXUniqueIDAccountName];
-        }
-        
-    });
-    
-    return uniqueId;
-
-}
+//+ (NSString *)yixiang_uniqueID
+//{
+//
+//    static NSString *kUXUniqueIDAccountName = @"com.YiXiang.idfa";
+//    static NSString *kUXUniqueIDServiceName = @"yixiang_unique_key";
+//
+//    static dispatch_once_t onceToken;
+//    static NSString * uniqueId = nil;
+//    dispatch_once(&onceToken, ^{
+//
+//        uniqueId = [SAMKeychain passwordForService:kUXUniqueIDServiceName account:kUXUniqueIDAccountName];
+//
+//        if (uniqueId.length == 0) {
+//            if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
+//                uniqueId = [self yixiang_IDFA];
+//                if ([[uniqueId stringByReplacingOccurrencesOfString:@"-" withString:@""] stringByReplacingOccurrencesOfString:@"0" withString:@""].length == 0) {//不存在说明用户关闭了广告跟踪
+//                    NSString *timeString = [NSString stringWithFormat:@"%.5f",[[NSDate date] timeIntervalSince1970]];
+//                    NSString *randomString = [NSString stringWithFormat:@"%d", arc4random() % 10000/*0-9999*/];
+//                    uniqueId = [[timeString stringByAppendingString:randomString] yixiang_md5hashString];
+//                }
+//            }
+//            [SAMKeychain setPassword:uniqueId forService:kUXUniqueIDServiceName account:kUXUniqueIDAccountName];
+//        }
+//
+//    });
+//
+//    return uniqueId;
+//
+//}
 
 + (NSString *)getSystemLangauge {
     NSString *localeLanguageCode = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
@@ -146,16 +146,16 @@ const char* jailbreak_tool_pathes[] = {
     return [self ipAddressWithIfaName:@"pdp_ip0"];
 }
 
-+ (NSString *)yixiang_IDFA
-{
-    NSString *idfa = nil;
-    if (NSClassFromString(@"ASIdentifierManager")) {
-        if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
-            idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-        }
-    }
-    return idfa;
-}
+//+ (NSString *)yixiang_IDFA
+//{
+//    NSString *idfa = nil;
+//    if (NSClassFromString(@"ASIdentifierManager")) {
+//        if ([ASIdentifierManager sharedManager].isAdvertisingTrackingEnabled) {
+//            idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+//        }
+//    }
+//    return idfa;
+//}
 
 + (BOOL)isJailBreak
 {
