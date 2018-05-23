@@ -28,9 +28,6 @@ typedef NS_ENUM(NSInteger, DeviceNetworkStatus){
 
 @interface UIDevice (YiXiang)
 
-//设备唯一标识符,取idfa,idfa取不到的时候使用时间戳加随机数
-+ (NSString *)yixiang_uniqueID;
-
 //判断设备是否越狱
 + (BOOL)isJailBreak;
 
